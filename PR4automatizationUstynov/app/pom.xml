@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.orm</groupId>
+        <artifactId>PR4automatizationUstynov</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>app</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Runtime classes (OrmSession, annotations, validator) -->
+        <dependency>
+            <groupId>com.orm</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+
+        <!--
+            The annotation processor is on the ANNOTATION PROCESSOR PATH only.
+            It does NOT end up on the runtime classpath of the app.
+            The <scope>provided</scope> keeps it off the final jar.
+        -->
+        <dependency>
+            <groupId>com.orm</groupId>
+            <artifactId>annotation-processor</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <!--
+                        Point Maven at our annotation processor module.
+                        Generated sources land in:
+                        target/generated-sources/annotations/
+                    -->
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>com.orm</groupId>
+                            <artifactId>annotation-processor</artifactId>
+                            <version>${project.version}</version>
+                        </path>
+                        <!-- JavaPoet must also be on the processor path -->
+                        <path>
+                            <groupId>com.squareup</groupId>
+                            <artifactId>javapoet</artifactId>
+                            <version>1.13.0</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
+            <!-- Makes the jar executable: mvn package → java -jar app.jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.orm.app.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- mvn exec:java  runs the app without packaging -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.orm.app.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

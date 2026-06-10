@@ -1,0 +1,10 @@
+com\orm\annotations\MaxLength.class
+com\orm\annotations\Column.class
+com\orm\annotations\Id.class
+com\orm\runtime\EntityValidator.class
+com\orm\annotations\NotNull.class
+com\orm\annotations\GenerateRepository.class
+com\orm\annotations\Table.class
+com\orm\annotations\Validated.class
+com\orm\session\OrmSession.class
+com\orm\runtime\ValidationException.class

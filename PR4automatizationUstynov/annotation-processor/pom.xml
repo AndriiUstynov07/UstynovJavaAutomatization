@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.orm</groupId>
+        <artifactId>PR4automatizationUstynov</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>annotation-processor</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Our own annotations -->
+        <dependency>
+            <groupId>com.orm</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+
+        <!-- JavaPoet — code generation library -->
+        <dependency>
+            <groupId>com.squareup</groupId>
+            <artifactId>javapoet</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <!--
+                        Disable annotation processing while compiling the processor itself.
+                        Without this Maven would try to apply the (not-yet-compiled)
+                        processor to its own sources — causing a bootstrap error.
+                    -->
+                    <compilerArgument>-proc:none</compilerArgument>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,5 @@
+com\orm\app\ProductRepository.class
+com\orm\app\User.class
+com\orm\app\UserRepository.class
+com\orm\app\Main.class
+com\orm\app\Product.class
