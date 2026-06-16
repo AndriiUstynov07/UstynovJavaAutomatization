@@ -5,20 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df03e3c3-27ec-4fb6-a32e-9741e04c0e03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/config/checkstyle/checkstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/src/test/java/com/example/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PR1automatizationUstynov/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PR1automatizationUstynov/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PR1automatizationUstynov/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../PR1automatizationUstynov/start.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PR1automatizationUstynov/stop.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../PR1automatizationUstynov/stop.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PR2AutomatizationUstynov/run.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../PR2AutomatizationUstynov/run.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="25" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AndriiUstynov07&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AndriiUstynov07/UstynovJavaAutomatization&quot;,
+    &quot;accountId&quot;: &quot;3b5a3b9a-ebf0-4450-a9ee-3f0fdeeaf2a0&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -33,6 +55,7 @@
     &quot;Maven.PR4automatizationUstynov [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.app [org.codehaus.mojo:exec-maven-plugin:3.1.0:java].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -42,6 +65,10 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Andrii/UstynovJavaAutomatization/PR4automatizationUstynov/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -65,6 +92,10 @@
       <option name="presentableId" value="Default" />
       <updated>1781079138698</updated>
       <workItem from="1781079139821" duration="2646000" />
+      <workItem from="1781088949532" duration="616000" />
+      <workItem from="1781089595634" duration="1633000" />
+      <workItem from="1781202936352" duration="597000" />
+      <workItem from="1781641684622" duration="1303000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,46 @@
+name: PR6automatizationUstynov CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    # Вказуємо GitHub Actions працювати всередині папки з 6-ю практикою
+    defaults:
+      run:
+        working-directory: ./PR6automatizationUstynov
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      # Крок 1: Статичний аналіз коду
+      - name: Run Checkstyle
+        run: ./gradlew checkstyleMain checkstyleTest
+
+      # Крок 2: Автоматизоване тестування (JUnit 6)
+      - name: Run JUnit 6 Tests
+        run: ./gradlew test
+
+      # Крок 3: Збирання проєкту в jar
+      - name: Build JAR
+        run: ./gradlew assemble
+
+      # Крок 4: Додавання у репозиторій артефактів
+      - name: Upload JAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PR6-JAR
+          path: PR6automatizationUstynov/build/libs/PR6automatizationUstynov.jar

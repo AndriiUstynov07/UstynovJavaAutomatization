@@ -58,19 +58,12 @@
                 <version>3.4.0</version>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.cargo</groupId>
-                <artifactId>cargo-maven3-plugin</artifactId>
-                <version>1.10.13</version>
+                <groupId>org.glassfish.embedded</groupId>
+                <artifactId>maven-embedded-glassfish-plugin</artifactId>
+                <version>7.1.0</version>
                 <configuration>
-                    <container>
-                        <containerId>glassfish7x</containerId>
-                        <home>C:\glassfish-7.1.0\glassfish7\glassfish</home>
-                    </container>
-                    <deployables>
-                        <deployable>
-                            <type>war</type>
-                        </deployable>
-                    </deployables>
+                    <app>${project.build.directory}/${project.build.finalName}.war</app>
+                    <port>8080</port>
                 </configuration>
             </plugin>
         </plugins>
