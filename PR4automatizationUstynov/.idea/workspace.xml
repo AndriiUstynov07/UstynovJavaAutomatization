@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df03e3c3-27ec-4fb6-a32e-9741e04c0e03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/config/checkstyle/checkstyle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/src/test/java/com/example/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PR1automatizationUstynov/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PR1automatizationUstynov/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PR1automatizationUstynov/start.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../PR1automatizationUstynov/start.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PR1automatizationUstynov/stop.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../PR1automatizationUstynov/stop.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PR2AutomatizationUstynov/run.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../PR2AutomatizationUstynov/run.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PR6automatizationUstynov/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../PR6automatizationUstynov/gradlew" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
