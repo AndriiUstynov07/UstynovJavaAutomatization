@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>DiscountCalculator.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.example.order;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class DiscountCalculator {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * &#1056;&#1086;&#1079;&#1088;&#1072;&#1093;&#1086;&#1074;&#1091;&#1108; &#1079;&#1085;&#1080;&#1078;&#1082;&#1091; &#1085;&#1072; &#1079;&#1072;&#1084;&#1086;&#1074;&#1083;&#1077;&#1085;&#1085;&#1103; &#1079;&#1072;&#1083;&#1077;&#1078;&#1085;&#1086; &#1074;&#1110;&#1076; &#1089;&#1091;&#1084;&#1080; &#1090;&#1072; &#1082;&#1110;&#1083;&#1100;&#1082;&#1086;&#1089;&#1090;&#1110; &#1090;&#1086;&#1074;&#1072;&#1088;&#1091;.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * &#1052;&#1072;&#1108; &#1082;&#1110;&#1083;&#1100;&#1082;&#1072; &#1075;&#1110;&#1083;&#1086;&#1082; - &#1075;&#1072;&#1088;&#1085;&#1077; &#1094;&#1110;&#1083;&#1100; &#1076;&#1083;&#1103; &#1084;&#1091;&#1090;&#1072;&#1094;&#1110;&#1081;&#1085;&#1086;&#1075;&#1086; &#1090;&#1077;&#1089;&#1090;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double calculateDiscount(double totalPrice, int quantity) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        double discount;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_12'>2</a>
+<span>
+
+1. calculateDiscount : negated conditional &rarr; KILLED<br/>
+
+2. calculateDiscount : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (totalPrice &#62;= 1000) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_13'>1</a>
+<span>
+
+1. calculateDiscount : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            discount = totalPrice * 0.15;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_14'>2</a>
+<span>
+
+1. calculateDiscount : negated conditional &rarr; KILLED<br/>
+
+2. calculateDiscount : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        } else if (totalPrice &#62;= 500) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_15'/>
+15
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_15'>1</a>
+<span>
+
+1. calculateDiscount : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            discount = totalPrice * 0.10;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_16'>2</a>
+<span>
+
+1. calculateDiscount : negated conditional &rarr; KILLED<br/>
+
+2. calculateDiscount : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        } else if (quantity &#62;= 10) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_17'>1</a>
+<span>
+
+1. calculateDiscount : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            discount = totalPrice * 0.05;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        } else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            discount = 0.0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_22'>1</a>
+<span>
+
+1. calculateDiscount : replaced double return with 0.0d for com/example/order/DiscountCalculator::calculateDiscount &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return discount;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorWeakTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorWeakTest]/[method:calculateDiscount_highPrice_appliesFifteenPercent()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_exactlyAtThousandBoundary_appliesFifteenPercent()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorWeakTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorWeakTest]/[method:calculateDiscount_highPrice_appliesFifteenPercent()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_belowAllThresholds_appliesNoDiscount()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_exactlyAtFiveHundredBoundary_appliesTenPercent()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_15'>15</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_15'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_justBelowThousandBoundary_appliesTenPercent()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_belowAllThresholds_appliesNoDiscount()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_justBelowFiveHundredBoundary_withHighQuantity_appliesFivePercent()]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_justBelowFiveHundredBoundary_withHighQuantity_appliesFivePercent()]</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@52a2e2fb_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@52a2e2fb_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateDiscount<br/><b>Killed by : </b>com.example.order.DiscountCalculatorWeakTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorWeakTest]/[method:calculateDiscount_highPrice_appliesFifteenPercent()]</span></span> replaced double return with 0.0d for com/example/order/DiscountCalculator::calculateDiscount &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_belowAllThresholds_appliesNoDiscount()] (0 ms)</li><li>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_justBelowFiveHundredBoundary_withHighQuantity_appliesFivePercent()] (0 ms)</li><li>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_justBelowThousandBoundary_appliesTenPercent()] (2 ms)</li><li>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_exactlyAtFiveHundredBoundary_appliesTenPercent()] (41 ms)</li><li>com.example.order.DiscountCalculatorWeakTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorWeakTest]/[method:calculateDiscount_highPrice_appliesFifteenPercent()] (0 ms)</li><li>com.example.order.DiscountCalculatorFixedTest.[engine:junit-jupiter]/[class:com.example.order.DiscountCalculatorFixedTest]/[method:calculateDiscount_exactlyAtThousandBoundary_appliesFifteenPercent()] (1 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.8
+
+</body>
+</html>

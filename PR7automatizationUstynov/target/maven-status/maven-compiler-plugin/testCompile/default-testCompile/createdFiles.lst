@@ -1,0 +1,4 @@
+com\example\order\OrderProcessorTest.class
+com\example\order\OrderTest.class
+com\example\order\DiscountCalculatorFixedTest.class
+com\example\order\DiscountCalculatorWeakTest.class

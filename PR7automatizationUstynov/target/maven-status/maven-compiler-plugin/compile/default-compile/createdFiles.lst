@@ -1,0 +1,7 @@
+com\example\order\Warehouse.class
+com\example\order\NotificationService.class
+com\example\order\DiscountCalculator.class
+com\example\order\Order.class
+com\example\order\OrderStatus.class
+com\example\order\PaymentGateway.class
+com\example\order\OrderProcessor.class
